@@ -2,7 +2,7 @@
 <html lang="lt" data-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
   <title>Visureigiai, UAB — Automobilių prekyba</title>
   <style>
     :root{
@@ -7751,6 +7751,111 @@ html[data-theme="dark"] .workTabs button.selected,html[data-theme="dark"] .perio
 @media(max-width:360px){.workActions{gap:8px}.workActions button{font-size:12px;padding:13px 9px;gap:6px}.periodTabs{grid-template-columns:1fr 1fr}.periodMetric strong{font-size:22px}.workHead h2{font-size:22px}}
 </style>
 
+
+<style id="home-dashboard-security-v2">
+/* Stable mobile viewport: prevent iOS focus zoom and horizontal layout stretching. */
+html,body{width:100%;max-width:100%;overflow-x:hidden!important;overscroll-behavior-x:none}
+body{-webkit-text-size-adjust:100%;touch-action:manipulation}
+.app,.view,.panel,.companyRow,.companyCustomer,.sheet{min-width:0;max-width:100%}
+input.input,textarea.input,select.input,input[type="date"],input[type="search"],input[type="number"],input[type="text"],input[type="password"],input[type="email"],input[type="tel"]{font-size:16px!important;max-width:100%;min-width:0}
+textarea.input{resize:vertical}
+
+/* Pagrindinis — app-like dashboard. */
+#view-home{padding-top:2px}
+#view-home .homeTop{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin:12px 2px 16px}
+#view-home .homeTopMain{min-width:0}
+#view-home .homeEyebrow{display:block;font-size:10px;line-height:1.2;font-weight:900;letter-spacing:.13em;color:var(--accent-2);margin-bottom:6px}
+#view-home .homeTop h2{margin:0;font-size:29px;line-height:1.05;letter-spacing:-.04em;color:var(--text)}
+#view-home .homeTop p{margin:7px 0 0;font-size:13px;color:var(--muted)}
+#view-home .homeStatsLink{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:13px;padding:10px 12px;font:inherit;font-size:12px;font-weight:800;cursor:pointer}
+#view-home .homeHero{position:relative;overflow:hidden;background:linear-gradient(145deg,#133e36 0%,#177b6d 56%,#20917f 100%);color:#fff;border-radius:27px;padding:20px 18px 18px;box-shadow:0 18px 42px rgba(23,123,109,.20);margin-bottom:18px}
+#view-home .homeHero::after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-65px;top:-82px;background:rgba(255,255,255,.09)}
+#view-home .homeHeroTop{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:15px}
+#view-home .homeHeroLabel{font-size:11px;font-weight:900;letter-spacing:.12em;opacity:.82}
+#view-home .homeAttentionPill{padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.13);font-size:11px;font-weight:850;white-space:nowrap}
+#view-home .homeHero h3{position:relative;z-index:1;margin:0;max-width:330px;font-size:26px;line-height:1.08;letter-spacing:-.04em}
+#view-home .homeHero p{position:relative;z-index:1;margin:9px 0 17px;max-width:345px;font-size:13px;line-height:1.5;color:rgba(255,255,255,.82)}
+#view-home .homeNewRecord{position:relative;z-index:1;width:100%;border:0;border-radius:17px;background:#fff;color:#143c35;min-height:64px;padding:12px 14px;display:flex;align-items:center;gap:12px;text-align:left;font:inherit;font-weight:900;cursor:pointer;box-shadow:0 10px 22px rgba(0,0,0,.10)}
+#view-home .homeNewRecord .homePlus{width:39px;height:39px;display:grid;place-items:center;flex:0 0 auto;border-radius:12px;background:#e9f6f2;color:#177b6d;font-size:26px;font-weight:500;line-height:1}
+#view-home .homeNewRecord strong{display:block;font-size:15px}
+#view-home .homeNewRecord small{display:block;margin-top:3px;color:#60706b;font-size:11px;font-weight:600;line-height:1.35}
+#view-home .homeSection{margin-top:20px}
+#view-home .homeSectionHead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:0 2px 10px}
+#view-home .homeSectionHead h3{margin:0;font-size:19px;line-height:1.2;letter-spacing:-.025em}
+#view-home .homeSectionHead span{font-size:11px;color:var(--muted);text-align:right}
+#view-home .homePulseGrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+#view-home .homePulseCard{appearance:none;width:100%;min-width:0;min-height:126px;padding:14px;border:1px solid var(--line);border-radius:20px;background:var(--surface);color:var(--text);font:inherit;text-align:left;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 8px 20px rgba(15,23,42,.04)}
+#view-home .homePulseCard.attention{border-color:#ecc6ca;background:#fffafa}
+#view-home .homePulseIcon{width:36px;height:36px;display:grid;place-items:center;border-radius:11px;background:var(--surface-2);font-size:17px}
+#view-home .homePulseCard.attention .homePulseIcon{background:#fcebed;color:#aa2938}
+#view-home .homePulseValue{display:block;font-size:29px;line-height:1;font-weight:950;letter-spacing:-.045em;margin-top:12px}
+#view-home .homePulseLabel{display:block;font-size:13px;font-weight:850;line-height:1.25;margin-top:6px}
+#view-home .homePulseMeta{display:block;font-size:10.5px;color:var(--muted);line-height:1.35;margin-top:4px}
+#view-home .homeBusinessGrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+#view-home .homeBusinessCard{padding:15px;border:1px solid var(--line);border-radius:20px;background:var(--surface);min-width:0}
+#view-home .homeBusinessCard.featured{grid-column:1/-1;background:var(--brand-soft,#e7f4f0);border-color:#cce4dc;display:flex;align-items:flex-end;justify-content:space-between;gap:14px}
+#view-home .homeBusinessCard span{display:block;font-size:11px;color:var(--muted);line-height:1.35}
+#view-home .homeBusinessCard strong{display:block;font-size:23px;line-height:1.15;letter-spacing:-.035em;margin-top:7px;overflow-wrap:anywhere}
+#view-home .homeBusinessCard.featured strong{color:var(--accent-2);font-size:28px}
+#view-home .homeBusinessCard small{display:block;color:var(--muted);font-size:10.5px;margin-top:5px}
+#view-home .workTabs{margin:0 0 10px;gap:7px}
+#view-home .workTabs button{min-height:38px;border-radius:999px;padding:8px 13px;font-size:12px}
+#view-home .companyList{gap:8px}
+#view-home .companyRow{border-radius:17px;padding:13px 12px;box-shadow:none}
+#view-home .companyRow .rowIcon{width:38px;height:38px;border-radius:12px}
+#view-home .companyRow strong{font-size:14px}
+#view-home .companyRow small{font-size:11px}
+#view-home .rowEnd{font-weight:700}
+.homeCreateGrid{display:grid;gap:9px}
+.homeCreateChoice{width:100%;min-height:67px;display:flex;align-items:center;gap:13px;padding:12px 13px;border:1px solid var(--line);border-radius:17px;background:var(--surface);color:var(--text);font:inherit;text-align:left;cursor:pointer}
+.homeCreateChoice .ico{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:var(--brand-soft,#e7f4f0);font-size:19px;flex:0 0 auto}
+.homeCreateChoice strong{display:block;font-size:14px}
+.homeCreateChoice small{display:block;font-size:11px;line-height:1.4;color:var(--muted);margin-top:3px}
+
+/* Security settings + lock screen. */
+.securitySettingsHead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.securitySettingsHead>div{min-width:0}
+.securityEyebrow{display:block;font-size:10px;font-weight:900;letter-spacing:.12em;color:var(--accent-2);margin-bottom:6px}
+.securitySettingsHead strong{display:block;font-size:17px;line-height:1.25}
+.securitySettingsHead p,.securityFootnote{font-size:12px;line-height:1.55;color:var(--muted);margin:7px 0 0}
+.securityStateBadge{flex:0 0 auto;border:1px solid var(--line);border-radius:999px;padding:6px 9px;font-size:10px;font-weight:850;color:var(--muted);background:var(--surface-2)}
+.securityStateBadge.on{background:#e5f5ec;border-color:#bce1ce;color:#146b49}
+.securitySettingsActions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.securitySettingsActions .btn{width:100%;font-size:13px!important}
+.appLock[hidden]{display:none!important}
+.appLock{position:fixed;inset:0;z-index:200000;background:linear-gradient(180deg,#eff6f4 0%,#f8fbfa 100%);display:grid;place-items:center;padding:24px 18px env(safe-area-inset-bottom)}
+.appLockCard{width:min(100%,390px);background:#fff;border:1px solid #dce8e4;border-radius:28px;padding:26px 20px;box-shadow:0 30px 80px rgba(15,65,56,.15);text-align:center}
+.appLockBrand{width:54px;height:54px;border-radius:17px;background:#177b6d;color:#fff;display:grid;place-items:center;margin:0 auto 13px;font-size:25px;font-weight:950}
+.appLockEyebrow{font-size:10px;font-weight:950;letter-spacing:.14em;color:#177b6d}
+.appLockCard h2{font-size:23px;letter-spacing:-.03em;margin:8px 0 7px}
+.appLockCard>p{font-size:13px;line-height:1.5;color:#667085;margin:0 auto 19px;max-width:310px}
+.appLockCard form{text-align:left}.appLockCard label{display:block;font-size:12px;font-weight:800;color:#4b5d58;margin:0 0 7px 2px}
+.appLockInput{width:100%;height:58px;border:1px solid #cfded9;border-radius:16px;background:#f9fbfa;color:#172033;font:inherit;font-size:22px!important;font-weight:900;letter-spacing:.28em;text-align:center;outline:none}
+.appLockInput:focus{border-color:#177b6d;box-shadow:0 0 0 4px rgba(23,123,109,.10)}
+.appLockButton{width:100%;margin-top:10px;min-height:52px!important;background:#177b6d!important;border-color:#177b6d!important}
+.appLockError{min-height:18px;margin-top:8px;color:#b4232d;font-size:12px;text-align:center}
+body.appLocked{overflow:hidden!important}
+.pinFormHint{font-size:12px;line-height:1.5;color:var(--muted);margin:-2px 0 12px}
+.pinDangerZone{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+
+html[data-theme="dark"] #view-home .homeHero{background:linear-gradient(145deg,#0f3b32 0%,#145c50 62%,#177b6d 100%)}
+html[data-theme="dark"] #view-home .homePulseCard.attention{background:#251a1c;border-color:#63353b}
+html[data-theme="dark"] #view-home .homeBusinessCard.featured{background:#143c37;border-color:#245b50}
+html[data-theme="dark"] .securityStateBadge.on{background:#123d30;border-color:#286c4f;color:#80e7b6}
+html[data-theme="dark"] .appLock{background:#0f172a}
+html[data-theme="dark"] .appLockCard{background:#111827;border-color:#263247;color:#f8fafc}
+html[data-theme="dark"] .appLockCard>p,html[data-theme="dark"] .appLockCard label{color:#cbd5e1}
+html[data-theme="dark"] .appLockInput{background:#162033;border-color:#334155;color:#f8fafc}
+
+@media(max-width:360px){
+  #view-home .homeTop h2{font-size:26px}
+  #view-home .homeHero h3{font-size:23px}
+  #view-home .homePulseCard{min-height:118px;padding:12px}
+  #view-home .homePulseValue{font-size:26px}
+  .securitySettingsActions{grid-template-columns:1fr}
+}
+</style>
+
 </head>
 <body>
 <div class="app">
@@ -8082,6 +8187,11 @@ html[data-theme="dark"] .workTabs button.selected,html[data-theme="dark"] .perio
   <div class="view" id="view-settings">
     <div class="sectionHead"><h2>Nustatymai</h2><span>Įmonės aplinka</span></div>
     <div class="panel pad companyStorage"><strong>Duomenys šiame įrenginyje</strong><p>Įrašai, nuotraukos ir dokumentai saugomi šioje naršyklėje. Atsarginė kopija apima visus priedus. Tarp darbuotojų duomenys automatiškai nesinchronizuojami.</p><div class="btnRow"><button class="btn" id="backupCompany">Atsarginė kopija</button><button class="btn secondary" id="restoreCompany">Atkurti kopiją</button></div><input type="file" id="restoreFile" accept="application/json,.json" hidden><p id="backupStatus" role="status"></p></div>
+    <div class="panel pad securitySettingsPanel" style="margin-top:12px">
+      <div class="securitySettingsHead"><div><span class="securityEyebrow">DUOMENŲ SAUGUMAS</span><strong>Programėlės užraktas</strong><p>PIN apsaugo klientų kontaktus, sutartis ir kitus įmonės duomenis nuo atsitiktinės prieigos šiame įrenginyje.</p></div><span class="securityStateBadge" id="securityStateBadge">Išjungta</span></div>
+      <div class="securitySettingsActions"><button class="btn" id="securityPinBtn" type="button">Nustatyti PIN</button><button class="btn secondary" id="lockNowBtn" type="button" hidden>Užrakinti dabar</button></div>
+      <p class="securityFootnote" id="securityStatus">PIN dar nenustatytas.</p>
+    </div>
     <div class="panel pad" style="margin-top:12px">
       <div class="switch">
         <div><strong>Šviesus / tamsus režimas</strong><div class="sub">Šviesus režimas yra numatytas</div></div>
@@ -8113,9 +8223,24 @@ html[data-theme="dark"] .workTabs button.selected,html[data-theme="dark"] .perio
   <div class="sheet" id="sheet"></div>
 </div>
 
+<div class="appLock" id="appLock" hidden aria-hidden="true">
+  <div class="appLockCard" role="dialog" aria-modal="true" aria-labelledby="appLockTitle">
+    <div class="appLockBrand">V</div>
+    <span class="appLockEyebrow">VISUREIGIAI, UAB</span>
+    <h2 id="appLockTitle">Programėlė užrakinta</h2>
+    <p>Įveskite PIN, kad pasiektumėte klientų, automobilių ir dokumentų duomenis.</p>
+    <form id="unlockForm" autocomplete="off">
+      <label for="unlockPin">PIN kodas</label>
+      <input id="unlockPin" class="appLockInput" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="off" aria-describedby="unlockError" />
+      <button class="btn appLockButton" type="submit">Atrakinti</button>
+      <div id="unlockError" class="appLockError" role="alert"></div>
+    </form>
+  </div>
+</div>
+
 <div class="navWrap">
   <div class="nav">
-    <button class="navBtn active" data-view="home"><div class="ico">🏠</div><div>Darbai</div></button>
+    <button class="navBtn active" data-view="home"><div class="ico">🏠</div><div>Pagrindinis</div></button>
     <button class="navBtn" data-view="garage"><div class="ico">🚗</div><div>Garažas</div></button>
     <button class="navBtn" data-view="customers"><div class="ico">👥</div><div>Klientai</div></button>
     <button class="navBtn" data-view="finance"><div class="ico">€</div><div>Finansai</div></button>
@@ -9132,6 +9257,7 @@ function addDaysISO(baseISO, days){
     theme:'light',
     sound:true,
     vibrate:true,
+    security:{enabled:false,pinHash:''},
     selectedView:'home',
     level:1,
     xp:0,
@@ -10314,6 +10440,7 @@ async function render(){
     document.getElementById('themeToggle').classList.toggle('on',state.theme==='light');
     document.getElementById('soundToggle').classList.toggle('on',state.sound);
     document.getElementById('vibrateToggle').classList.toggle('on',state.vibrate);
+    renderSecuritySettings();
     state.ui=state.ui||{};
     document.getElementById('menu-history').classList.toggle('open',!!state.ui.menuHistoryOpen);
     renderCompanyHome();
@@ -10955,6 +11082,68 @@ async function render(){
   // Senas „svarbios užduoties“ formos handleris pašalintas:
   // Užduočių puslapį dabar pilnai valdo renderPersonalTasks().
 
+  function securityEnabled(){return !!(state.security&&state.security.enabled&&state.security.pinHash);}
+  async function pinDigest(pin){
+    const text='visureigiai-uab:'+String(pin);
+    if(window.crypto?.subtle){
+      const payload=new TextEncoder().encode(text);
+      const digest=await window.crypto.subtle.digest('SHA-256',payload);
+      return Array.from(new Uint8Array(digest)).map(b=>b.toString(16).padStart(2,'0')).join('');
+    }
+    let h=2166136261;for(let i=0;i<text.length;i++){h^=text.charCodeAt(i);h=Math.imul(h,16777619);}
+    return 'local-'+(h>>>0).toString(16).padStart(8,'0');
+  }
+  function renderSecuritySettings(){
+    state.security=state.security||{enabled:false,pinHash:''};
+    const enabled=securityEnabled(),badge=document.getElementById('securityStateBadge'),button=document.getElementById('securityPinBtn'),lock=document.getElementById('lockNowBtn'),status=document.getElementById('securityStatus');
+    if(badge){badge.textContent=enabled?'Įjungta':'Išjungta';badge.classList.toggle('on',enabled);}
+    if(button)button.textContent=enabled?'Keisti PIN':'Nustatyti PIN';
+    if(lock)lock.hidden=!enabled;
+    if(status)status.textContent=enabled?'Užraktas aktyvus. PIN prašomas atidarius programėlę iš naujo.':'PIN dar nenustatytas.';
+  }
+  function lockApp(){
+    if(!securityEnabled())return;
+    const lock=document.getElementById('appLock'),pin=document.getElementById('unlockPin'),error=document.getElementById('unlockError');
+    if(!lock)return;
+    if(error)error.textContent='';if(pin)pin.value='';
+    lock.hidden=false;lock.setAttribute('aria-hidden','false');document.body.classList.add('appLocked');
+    setTimeout(()=>pin?.focus(),80);
+  }
+  function unlockApp(){
+    const lock=document.getElementById('appLock');if(!lock)return;
+    lock.hidden=true;lock.setAttribute('aria-hidden','true');document.body.classList.remove('appLocked');
+  }
+  function openPinSettings(){
+    const enabled=securityEnabled();
+    openSheet(`<div class="sheetHead"><div><span class="securityEyebrow">DUOMENŲ SAUGUMAS</span><h3>${enabled?'Keisti PIN':'Nustatyti PIN'}</h3></div><button class="closeBtn" type="button" id="closePinSettings" aria-label="Uždaryti">✕</button></div><form class="companyForm" id="pinSettingsForm" autocomplete="off">${enabled?'<div class="field"><label for="currentPin">Dabartinis PIN</label><input class="input" id="currentPin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="off" required></div>':''}<div class="field"><label for="newPin">Naujas PIN</label><input class="input" id="newPin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="off" placeholder="4–6 skaitmenys" required></div><div class="field"><label for="confirmPin">Pakartokite PIN</label><input class="input" id="confirmPin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="off" required></div><p class="pinFormHint">Tai programėlės ekrano užraktas šiame įrenginyje. Jis nepakeičia atsarginės kopijos ar įrenginio apsaugos.</p><div class="companyFormError" id="pinSettingsError" role="alert"></div><button class="btn" type="submit" style="width:100%">${enabled?'Išsaugoti naują PIN':'Įjungti PIN užraktą'}</button>${enabled?'<div class="pinDangerZone"><button class="btn ghost" id="disablePinBtn" type="button" style="width:100%">Išjungti PIN užraktą</button></div>':''}</form>`);
+    document.getElementById('closePinSettings').onclick=closeSheet;
+    const form=document.getElementById('pinSettingsForm'),error=document.getElementById('pinSettingsError');
+    form.onsubmit=async e=>{
+      e.preventDefault();error.textContent='';
+      const current=document.getElementById('currentPin')?.value||'',next=document.getElementById('newPin').value,confirmPin=document.getElementById('confirmPin').value;
+      if(enabled&&await pinDigest(current)!==state.security.pinHash){error.textContent='Dabartinis PIN neteisingas.';return;}
+      if(!/^\d{4,6}$/.test(next)){error.textContent='PIN turi būti 4–6 skaitmenų.';return;}
+      if(next!==confirmPin){error.textContent='PIN kodai nesutampa.';return;}
+      state.security={enabled:true,pinHash:await pinDigest(next)};
+      if(!saveState()){error.textContent='Nepavyko išsaugoti nustatymo.';return;}
+      closeSheet();renderSecuritySettings();toast('PIN užraktas įjungtas','🔒');
+    };
+    const disable=document.getElementById('disablePinBtn');
+    if(disable)disable.onclick=async()=>{
+      error.textContent='';const current=document.getElementById('currentPin')?.value||'';
+      if(!current||await pinDigest(current)!==state.security.pinHash){error.textContent='Įveskite teisingą dabartinį PIN.';return;}
+      state.security={enabled:false,pinHash:''};saveState();closeSheet();renderSecuritySettings();unlockApp();toast('PIN užraktas išjungtas','🔓');
+    };
+  }
+  document.getElementById('securityPinBtn').onclick=openPinSettings;
+  document.getElementById('lockNowBtn').onclick=lockApp;
+  document.getElementById('unlockForm').onsubmit=async e=>{
+    e.preventDefault();const pin=document.getElementById('unlockPin').value,error=document.getElementById('unlockError');
+    error.textContent='';
+    if(!/^\d{4,6}$/.test(pin)){error.textContent='Įveskite 4–6 skaitmenų PIN.';return;}
+    if(await pinDigest(pin)!==state.security?.pinHash){error.textContent='Neteisingas PIN.';document.getElementById('unlockPin').select();return;}
+    unlockApp();
+  };
 
   document.getElementById('themeToggle').onclick = () => {
     state.theme = state.theme === 'light' ? 'dark' : 'light';
@@ -11117,7 +11306,7 @@ async function render(){
   };
 
   const SDK_STATES=[['unset','Nesutvarkyta'],['submitted','Pateikta'],['seller','Laukiama pardavėjo'],['buyer','Laukiama pirkėjo'],['seller-late','Vėluoja pardavėjas'],['buyer-late','Vėluoja pirkėjas'],['done','Sutvarkyta']];
-  const DOC_TYPES=[['purchase','Pirkimo sutartis'],['sale','Pardavimo sutartis'],['invoice','Sąskaitos'],['repair','Remonto dokumentai']];
+  const DOC_TYPES=[['purchase','Pirkimo sutartis'],['sale','Pardavimo sutartis'],['invoice','Sąskaitos'],['insurance','Draudimas'],['inspection','Techninės apžiūros dokumentas'],['registration','Registracijos dokumentai'],['repair','Remonto dokumentai']];
   const DOCUMENT_LIMIT=20*1024*1024;
   const fieldValue=(p,k)=>document.getElementById(p+k)?.value.trim()||'';
   function sdkClass(s){return s==='done'?'sdkDone':s?.endsWith('-late')?'sdkLate':s==='unset'||!s?'sdkUnset':'sdkPending';}
@@ -11224,21 +11413,87 @@ async function render(){
   }
 
   let workFilter='all';
+  function homeDailySignals(){
+    const now=todayISO();
+    const activeCars=state.cars.filter(c=>c.status!=='parduotas');
+    const activeCustomers=(state.customers||[]).filter(c=>c.stage!=='Užbaigta');
+    const sdkLate=activeCars.filter(c=>(c.sdkStatus||'').endsWith('-late'));
+    const inspections=activeCustomers.filter(c=>c.stage==='Apžiūra'&&(!c.followDate||c.followDate<=now));
+    const calls=activeCustomers.filter(c=>c.stage!=='Apžiūra'&&c.followDate&&c.followDate<=now);
+    const prep=activeCars.flatMap(c=>(c.checklist||[]).filter(t=>!t.done).map(t=>({car:c,task:t})));
+    return {sdkLate,calls,inspections,prep};
+  }
   function renderCompanyHome(){
+    const now=todayISO();
+    const active=state.cars.filter(c=>c.status!=='parduotas');
+    const soldMonth=state.cars.filter(c=>c.status==='parduotas'&&(c.soldDateISO||'').startsWith(currentMonthKey()));
+    const monthProfit=soldMonth.reduce((sum,c)=>sum+carNetProfit(c),0);
+    const activeCost=active.reduce((sum,c)=>sum+carTotalCost(c),0);
+    const signals=homeDailySignals();
+    const attention=signals.sdkLate.length+signals.calls.length+signals.inspections.length+signals.prep.length;
     const tasks=companyTasks();
-    state.cars.filter(c=>c.status!=='parduotas'&&c.sdkStatus&&c.sdkStatus!=='done').forEach(c=>tasks.push({title:c.name,detail:'SDK · '+(SDK_STATES.find(s=>s[0]===c.sdkStatus)?.[1]||'Nesutvarkyta'),date:'',kind:'car',id:c.id,icon:'▤',late:c.sdkStatus.endsWith('-late')}));
-    const now=todayISO();tasks.sort((a,b)=>Number(!!(b.late||(b.date&&b.date<now)))-Number(!!(a.late||(a.date&&a.date<now)))||(a.date||'9999').localeCompare(b.date||'9999'));
+    active.filter(c=>c.sdkStatus&&c.sdkStatus!=='done').forEach(c=>tasks.push({title:c.name,detail:'SDK · '+(SDK_STATES.find(s=>s[0]===c.sdkStatus)?.[1]||'Nesutvarkyta'),date:'',kind:'car',id:c.id,icon:'▤',late:(c.sdkStatus||'').endsWith('-late')}));
+    tasks.sort((a,b)=>Number(!!(b.late||(b.date&&b.date<now)))-Number(!!(a.late||(a.date&&a.date<now)))||(a.date||'9999').localeCompare(b.date||'9999'));
     const shown=tasks.filter(t=>workFilter==='all'||(workFilter==='today'?t.date===now:t.late||(t.date&&t.date<now)));
-    document.getElementById('companyHome').innerHTML=`<div class="workHead"><h2>Darbai</h2><button class="workTextButton" data-open-view="garage-stats">Statistika ↗</button></div>
-      <div class="workActions"><button data-company-addcar><span>＋</span>Automobilis</button><button data-company-newcustomer><span>＋</span>Kliento užklausa</button><button data-work-lead><span>＋</span>Pirkimo variantas</button><button data-work-task><span>＋</span>Užduotis</button></div>
-      <div class="workTabs" role="group" aria-label="Darbų filtras">${[['all','Visi'],['today','Šiandien'],['late','Vėluoja']].map(([v,l])=>`<button type="button" data-work-filter="${v}" aria-pressed="${workFilter===v}" class="${workFilter===v?'selected':''}">${l}</button>`).join('')}</div>
-      <div class="companyList">${shown.map(t=>`<button class="companyRow" data-company-kind="${t.kind}" data-company-id="${escapeHTML(t.id)}"><span class="rowIcon">${t.icon}</span><span class="rowBody"><strong>${escapeHTML(t.title)}</strong><small>${escapeHTML(t.detail)}</small></span>${t.date||t.late?`<span class="rowEnd ${t.late||(t.date<now)?'companyDue':''}">${t.late?'Vėluoja':t.date===now?'Šiandien':companyDate(t.date)}</span>`:''}</button>`).join('')||`<div class="workEmpty">${workFilter==='today'?'Šiandienai suplanuotų darbų nėra.':workFilter==='late'?'Vėluojančių darbų nėra.':'Laukiančių darbų nėra.'}</div>`}</div>`;
+    const dateLabel=new Date().toLocaleDateString('lt-LT',{weekday:'long',month:'long',day:'numeric'});
+    const pulse=[
+      {key:'sdk',icon:'▤',label:'Vėluojantys SDK',count:signals.sdkLate.length,meta:'Reikia užbaigti deklaravimą',attention:signals.sdkLate.length>0},
+      {key:'calls',icon:'☎',label:'Klientų skambučiai',count:signals.calls.length,meta:'Šiandien arba jau vėluoja',attention:signals.calls.length>0},
+      {key:'inspections',icon:'⌖',label:'Apžiūros',count:signals.inspections.length,meta:'Aktyvios šiandienos apžiūros',attention:signals.inspections.length>0},
+      {key:'prep',icon:'✓',label:'Paruošimo darbai',count:signals.prep.length,meta:'Nebaigta aktyviuose auto',attention:false}
+    ];
+    document.getElementById('companyHome').innerHTML=`
+      <div class="homeTop">
+        <div class="homeTopMain"><span class="homeEyebrow">VISUREIGIAI, UAB</span><h2>Pagrindinis</h2><p>${escapeHTML(dateLabel)}</p></div>
+        <button class="homeStatsLink" type="button" data-open-view="garage-stats">Statistika ↗</button>
+      </div>
+      <section class="homeHero">
+        <div class="homeHeroTop"><span class="homeHeroLabel">ŠIANDIEN</span><span class="homeAttentionPill">${attention?attention+' laukia':'Viskas kontroliuojama'}</span></div>
+        <h3>${attention?'Šiandien reikia dėmesio':'Diena kontroliuojama'}</h3>
+        <p>SDK, klientų kontaktai, apžiūros ir automobilių paruošimas vienoje vietoje.</p>
+        <button class="homeNewRecord" type="button" data-home-new><span class="homePlus">＋</span><span><strong>Naujas įrašas</strong><small>Automobilis, klientas, pirkimo variantas arba užduotis</small></span></button>
+      </section>
+      <section class="homeSection">
+        <div class="homeSectionHead"><h3>Šiandienos kontrolė</h3><span>Kas svarbiausia dabar</span></div>
+        <div class="homePulseGrid">${pulse.map(x=>`<button class="homePulseCard ${x.attention?'attention':''}" type="button" data-home-area="${x.key}"><span class="homePulseIcon">${x.icon}</span><span><strong class="homePulseValue">${x.count}</strong><span class="homePulseLabel">${x.label}</span><small class="homePulseMeta">${x.meta}</small></span></button>`).join('')}</div>
+      </section>
+      <section class="homeSection">
+        <div class="homeSectionHead"><h3>Verslo vaizdas</h3><span>Trumpai, be triukšmo</span></div>
+        <div class="homeBusinessGrid">
+          <div class="homeBusinessCard"><span>Aktyvūs automobiliai</span><strong>${active.length}</strong><small>Garaže ir ruošiami</small></div>
+          <div class="homeBusinessCard"><span>Aktyvių auto savikaina</span><strong>${moneyFmt(activeCost)}</strong><small>Pirkimai + paruošimas</small></div>
+          <div class="homeBusinessCard featured"><div><span>Šio mėnesio marža</span><strong${monthProfit<0?' class="companyDue"':''}>${moneyFmt(monthProfit)}</strong><small>${soldMonth.length} parduotų automobilių</small></div><button class="homeStatsLink" type="button" data-open-view="garage-stats">Plačiau ↗</button></div>
+        </div>
+      </section>
+      <section class="homeSection">
+        <div class="homeSectionHead"><h3>Artimiausi darbai</h3><span>${tasks.length?tasks.length+' laukia':'Nieko skubaus'}</span></div>
+        <div class="workTabs" role="group" aria-label="Darbų filtras">${[['all','Visi'],['today','Šiandien'],['late','Vėluoja']].map(([v,l])=>`<button type="button" data-work-filter="${v}" aria-pressed="${workFilter===v}" class="${workFilter===v?'selected':''}">${l}</button>`).join('')}</div>
+        <div class="companyList">${shown.slice(0,8).map(t=>`<button class="companyRow" data-company-kind="${t.kind}" data-company-id="${escapeHTML(t.id)}"><span class="rowIcon">${t.icon}</span><span class="rowBody"><strong>${escapeHTML(t.title)}</strong><small>${escapeHTML(t.detail)}</small></span>${t.date||t.late?`<span class="rowEnd ${t.late||(t.date<now)?'companyDue':''}">${t.late?'Vėluoja':t.date===now?'Šiandien':companyDate(t.date)}</span>`:''}</button>`).join('')||`<div class="workEmpty">${workFilter==='today'?'Šiandienai suplanuotų darbų nėra.':workFilter==='late'?'Vėluojančių darbų nėra.':'Laukiančių darbų nėra.'}</div>`}</div>
+      </section>`;
     document.querySelectorAll('.navBtn').forEach(b=>{if(b.dataset.view===state.selectedView)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
   }
   document.addEventListener('click',e=>{
     const filter=e.target.closest('[data-work-filter]');if(filter){workFilter=filter.dataset.workFilter;renderCompanyHome();return;}
-    if(e.target.closest('[data-work-lead]')){companyGo('garage-leads');document.getElementById('showAddGarageLeadBtn').click();return;}
-    if(e.target.closest('[data-work-task]')){state.ui.garageTaskGroups={autos:false,custom:true};companyGo('garage');setTimeout(()=>document.getElementById('garageTaskTitle').focus(),100);}
+    if(e.target.closest('[data-home-new]')){
+      openSheet(`<div class="sheetHead"><div><span class="securityEyebrow">NAUJAS ĮRAŠAS</span><h3>Ko norite pridėti?</h3></div><button class="closeBtn" type="button" data-close-home-new aria-label="Uždaryti">✕</button></div><div class="homeCreateGrid"><button class="homeCreateChoice" type="button" data-home-create="car"><span class="ico">🚗</span><span><strong>Automobilis</strong><small>Įtraukti nupirktą automobilį į garažą</small></span></button><button class="homeCreateChoice" type="button" data-home-create="customer"><span class="ico">👤</span><span><strong>Kliento užklausa</strong><small>Kontaktas, apžiūra, derybos ir kitas veiksmas</small></span></button><button class="homeCreateChoice" type="button" data-home-create="lead"><span class="ico">◎</span><span><strong>Pirkimo variantas</strong><small>Potencialus automobilis ir sekantis skambutis</small></span></button><button class="homeCreateChoice" type="button" data-home-create="task"><span class="ico">✓</span><span><strong>Užduotis</strong><small>Vidinis įmonės arba garažo darbas</small></span></button></div>`);
+      return;
+    }
+    if(e.target.closest('[data-close-home-new]')){closeSheet();return;}
+    const create=e.target.closest('[data-home-create]');if(create){
+      const type=create.dataset.homeCreate;
+      if(type==='customer'){openCustomer();return;}
+      closeSheet();
+      if(type==='car'){companyGo('garage');document.getElementById('showAddCarFormBtn')?.click();return;}
+      if(type==='lead'){companyGo('garage-leads');document.getElementById('showAddGarageLeadBtn')?.click();return;}
+      if(type==='task'){state.ui.garageTaskGroups={autos:false,custom:true};companyGo('garage');setTimeout(()=>document.getElementById('garageTaskTitle')?.focus(),100);return;}
+    }
+    const area=e.target.closest('[data-home-area]');if(area){
+      const key=area.dataset.homeArea;
+      if(key==='calls'){companyGo('customers');const f=document.getElementById('customerFilter');if(f){f.value='active';renderCustomers();}return;}
+      if(key==='inspections'){companyGo('customers');const f=document.getElementById('customerFilter');if(f){f.value='Apžiūra';renderCustomers();}return;}
+      if(key==='sdk'){companyGo('garage');return;}
+      if(key==='prep'){state.ui.garageTaskGroups={autos:true,custom:false};companyGo('garage');return;}
+    }
   });
   const statsPage=document.getElementById('view-garage-stats');
   statsPage.innerHTML=`<div class="workHead"><h2>Statistika</h2><button class="workTextButton" data-open-view="garage">Garažas ↗</button></div><form id="periodForm" class="periodPanel"><div class="workTabs periodTabs" role="group" aria-label="Laikotarpis">${[['month','Šis mėnuo'],['previous','Praėjęs'],['year','Šie metai'],['all','Visas laikas']].map(([v,l])=>`<button type="button" data-period="${v}">${l}</button>`).join('')}</div><div class="periodDates"><label for="periodFrom">Nuo<input class="input" type="date" id="periodFrom"></label><label for="periodTo">Iki<input class="input" type="date" id="periodTo"></label><button class="btn" type="submit">Rodyti</button></div><div id="periodError" role="alert"></div></form><div id="periodSummary"></div><div class="workHead salesHeading"><h3>Pardavimai</h3><span id="periodSalesCount"></span></div><div id="periodSales"></div>`;
@@ -11285,6 +11540,7 @@ async function render(){
       ensureMonthlyCycle();
     }catch(e){ console.warn('Initial setup failed; continuing to render:',e); }
     try{ render(); }catch(e){ console.warn('Initial render failed:',e); }
+    if(securityEnabled()) setTimeout(lockApp,0);
     requestAnimationFrame(()=>requestAnimationFrame(()=>{try{render();}catch(e){console.warn('Post-paint render failed:',e);}}));
   };
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded',bootRender,{once:true});
