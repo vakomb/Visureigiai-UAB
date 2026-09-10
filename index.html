@@ -7736,6 +7736,21 @@ html[data-theme="dark"] .companyStat.featured{background:#143c37;border-color:#2
 html[data-theme="dark"] .nav{background:var(--surface)!important;border-color:var(--line)!important}html[data-theme="dark"] .navWrap{background:rgba(15,23,42,.94)!important}html[data-theme="dark"] .navBtn{color:var(--muted)!important}html[data-theme="dark"] .navBtn.active{background:#153d35!important;color:#6ee7b7!important;border-color:#245b50!important}html[data-theme="dark"] .companyActions .btn:not(.secondary){background:#147d66!important;border-color:#147d66!important}
 </style>
 
+<style id="vehicle-enhancement">
+.vehicleDetails{border:1px solid var(--line);border-radius:14px;margin:12px 0;background:var(--surface);overflow:hidden}.vehicleDetails summary{padding:14px 12px;cursor:pointer;font-size:14px;font-weight:750;line-height:1.4;color:var(--text)}.vehicleDetails[open] summary{border-bottom:1px solid var(--line);margin-bottom:12px}.vehicleFields{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 12px 4px}.vehicleFields .field{min-width:0;margin-bottom:10px}.vehicleFields .input{width:100%!important;min-width:0!important;font-size:16px!important;padding:11px 10px!important;font-weight:500!important}.vehicleFields label{display:block;font-size:13px!important;font-weight:600!important;margin-bottom:7px;line-height:1.4}.vehicleFields .vehicleWide{grid-column:1/-1}.sdkFields{padding:0;margin:12px 0;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}.sdkFields select{font-size:13px!important;min-height:44px!important}.vehicleSdkDisplay{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:6px 0 16px}.vehicleSdkDisplay>div{min-width:0}.vehicleSdkDisplay>div>span{display:block;font-size:12px;color:var(--muted)}.vehicleSdkDisplay strong{display:block;font-size:16px;overflow-wrap:anywhere;margin-top:5px}.vehicleSdkBadge{font-size:12px;font-weight:700;border:1px solid transparent;border-radius:9px;padding:7px 10px;max-width:60%;line-height:1.4}.sdkDone{color:#146b49!important;background:#e5f5ec!important;border-color:#bce1ce!important}.sdkLate{color:#aa2938!important;background:#fcebed!important;border-color:#efc1c8!important}.sdkPending{color:#8b5c09!important;background:#fff4d9!important;border-color:#efdaa6!important}.sdkUnset{color:var(--muted)!important;background:var(--surface-2)!important;border-color:var(--line)!important}.vehicleInfo{margin:0;padding:0 12px 8px;display:grid;gap:0}.vehicleInfo>div{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid var(--line)}.vehicleInfo>div:last-child{border-bottom:0}.vehicleInfo dt{font-size:13px;color:var(--muted);flex:1}.vehicleInfo dd{font-size:14px;font-weight:600;margin:0;text-align:right;max-width:60%;overflow-wrap:anywhere}.vehicleCount{font-size:12px;color:var(--muted);margin-left:6px}.vehicleDocInputs{display:grid;gap:12px;padding:0 12px 14px}.vehicleDocPicker{display:grid;gap:7px;font-size:13px!important;font-weight:600!important;min-width:0}.vehicleDocPicker input{display:block;width:100%;max-width:100%;min-width:0;font:inherit;font-size:12px;font-weight:400;color:var(--muted)}.vehicleDocPicker input::file-selector-button{border:1px solid var(--line);border-radius:8px;padding:8px;background:var(--surface-2);color:var(--text);cursor:pointer;margin-right:8px}.vehicleDocList{padding:0 12px}.vehicleDocRow{display:flex;align-items:center;gap:9px;border-bottom:1px solid var(--line);margin-bottom:12px;padding-bottom:12px}.vehicleDocRow[hidden]{display:none!important}.vehicleDocDownload{border:0;background:transparent;color:var(--text);text-align:left;font:inherit;padding:0;flex:1;min-width:0;cursor:pointer}.vehicleDocDownload strong{display:block;font-size:13px;overflow-wrap:anywhere}.vehicleDocDownload span{display:block;font-size:11px;color:var(--muted);margin-top:5px}.vehicleDocRemove{border:0;background:transparent;color:var(--danger);font-size:24px;min-width:36px;min-height:40px;cursor:pointer}.vehicleDocuments{margin-bottom:18px}.vehicleDetails summary:focus-visible{outline:2px solid var(--accent);outline-offset:-3px}
+html[data-theme="dark"] .sdkDone{background:#123d30!important;color:#80e7b6!important;border-color:#286c4f!important}html[data-theme="dark"] .sdkLate{background:#471e27!important;color:#ffadba!important;border-color:#7e3947!important}html[data-theme="dark"] .sdkPending{background:#423519!important;color:#f8d488!important;border-color:#705825!important}
+@media(max-width:360px){.sdkFields{grid-template-columns:1fr}.vehicleFields:not(.sdkFields){gap:8px}.vehicleInfo>div{gap:9px}.vehicleInfo dd{max-width:58%}}
+</style>
+<style>
+.vehicleDocPicker{position:relative;border:1px solid var(--line);border-radius:10px;padding:11px 12px;cursor:pointer;background:var(--surface-2);color:var(--text);gap:0}.vehicleDocPicker input{position:absolute;width:1px!important;height:1px;opacity:0;overflow:hidden;inset:0}.vehicleDocPicker:focus-within{outline:2px solid var(--accent);outline-offset:2px}.vehicleDocPicker small:empty{display:none}.vehicleDocPicker small{display:block;font-size:12px;font-weight:400;color:var(--muted);line-height:1.4;margin-top:7px;overflow-wrap:anywhere}.vehicleDocInputs{gap:8px}
+</style>
+
+<style id="work-home-final">
+.topbar{display:none!important}.workHead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:14px 2px 18px}.workHead h2{font-size:24px;letter-spacing:-.5px;margin:0}.workHead h3{font-size:18px;margin:0}.workTextButton{border:0;background:none;color:var(--accent-2);font:inherit;font-size:13px;font-weight:650;padding:8px 0;cursor:pointer}.workActions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px}.workActions button{display:flex;align-items:center;gap:10px;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:16px;color:var(--text);padding:17px 12px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;min-height:68px}.workActions button>span{display:grid;place-items:center;flex-shrink:0;background:var(--brand-soft,#e5f5ef);color:var(--accent-2);border-radius:10px;width:30px;height:30px;font-size:22px;font-weight:400}.workTabs{display:flex;gap:6px;margin:0 0 14px;flex-wrap:wrap}.workTabs button{border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:var(--muted);font:inherit;font-size:13px;background:var(--surface);cursor:pointer}.workTabs button.selected{color:var(--accent-2);background:var(--brand-soft,#e5f5ef);border-color:#b9ddd1;font-weight:700}.workEmpty{padding:25px 16px;border:1px dashed var(--line);border-radius:16px;color:var(--muted);font-size:14px;text-align:center}.periodPanel{border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:13px;margin-bottom:14px}.periodTabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.periodTabs button{padding:10px 3px;font-size:12px}.periodDates{display:grid;grid-template-columns:1fr 1fr;gap:10px}.periodDates label{font-size:12px;color:var(--muted);min-width:0;display:grid;gap:6px}.periodDates input{width:100%!important;min-width:0!important;max-width:100%;font-size:14px!important;padding:10px 8px!important;font-weight:500!important}.periodDates button{grid-column:1/-1;font-size:14px!important;padding:11px!important}#periodError:empty{display:none}#periodError{color:var(--danger);font-size:12px;margin-top:10px}.periodMetrics{display:grid;grid-template-columns:1fr 1fr;gap:9px}.periodMetric{border:1px solid var(--line);background:var(--surface);border-radius:16px;padding:15px 13px;min-width:0}.periodMetric>span,.periodAverages span{display:block;color:var(--muted);font-size:12px;line-height:1.4}.periodMetric strong{display:block;font-size:24px;line-height:1.3;margin-top:8px;overflow-wrap:anywhere}.periodProfit{background:var(--brand-soft,#e5f5ef);border-color:#bfdfd4}.periodProfit strong{color:var(--accent-2)}.periodAverages{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px 5px}.periodAverages strong{display:block;font-size:16px;margin-top:7px}.periodFootnote{font-size:11px;color:var(--muted);line-height:1.6;margin:0 3px 20px}.salesHeading{margin-bottom:12px}.salesHeading>span{font-size:13px;color:var(--muted)}.periodSaleMargin{text-align:right;font-size:16px;font-weight:700;color:var(--accent-2)}.periodSaleMargin small{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:6px}.periodPager{display:flex;align-items:center;justify-content:space-between;margin-top:12px}.periodPager>span{font-size:13px;color:var(--muted)}
+html[data-theme="dark"] .workTabs button.selected,html[data-theme="dark"] .periodProfit,html[data-theme="dark"] .workActions button>span{background:#143b31!important;border-color:#245f4b;color:#80e7b6}html[data-theme="dark"] .periodProfit strong,html[data-theme="dark"] .workTextButton{color:#80e7b6}
+@media(max-width:360px){.workActions{gap:8px}.workActions button{font-size:12px;padding:13px 9px;gap:6px}.periodTabs{grid-template-columns:1fr 1fr}.periodMetric strong{font-size:22px}.workHead h2{font-size:22px}}
+</style>
+
 </head>
 <body>
 <div class="app">
@@ -8066,7 +8081,7 @@ html[data-theme="dark"] .nav{background:var(--surface)!important;border-color:va
 
   <div class="view" id="view-settings">
     <div class="sectionHead"><h2>Nustatymai</h2><span>Įmonės aplinka</span></div>
-    <div class="panel pad companyStorage"><strong>Duomenys šiame įrenginyje</strong><p>Įrašai ir nuotraukos saugomi šioje naršyklėje. Atsarginė kopija apima ir nuotraukas. Tarp darbuotojų duomenys automatiškai nesinchronizuojami.</p><div class="btnRow"><button class="btn" id="backupCompany">Atsarginė kopija</button><button class="btn secondary" id="restoreCompany">Atkurti kopiją</button></div><input type="file" id="restoreFile" accept="application/json,.json" hidden><p id="backupStatus" role="status"></p></div>
+    <div class="panel pad companyStorage"><strong>Duomenys šiame įrenginyje</strong><p>Įrašai, nuotraukos ir dokumentai saugomi šioje naršyklėje. Atsarginė kopija apima visus priedus. Tarp darbuotojų duomenys automatiškai nesinchronizuojami.</p><div class="btnRow"><button class="btn" id="backupCompany">Atsarginė kopija</button><button class="btn secondary" id="restoreCompany">Atkurti kopiją</button></div><input type="file" id="restoreFile" accept="application/json,.json" hidden><p id="backupStatus" role="status"></p></div>
     <div class="panel pad" style="margin-top:12px">
       <div class="switch">
         <div><strong>Šviesus / tamsus režimas</strong><div class="sub">Šviesus režimas yra numatytas</div></div>
@@ -8100,7 +8115,7 @@ html[data-theme="dark"] .nav{background:var(--surface)!important;border-color:va
 
 <div class="navWrap">
   <div class="nav">
-    <button class="navBtn active" data-view="home"><div class="ico">🏠</div><div>Suvestinė</div></button>
+    <button class="navBtn active" data-view="home"><div class="ico">🏠</div><div>Darbai</div></button>
     <button class="navBtn" data-view="garage"><div class="ico">🚗</div><div>Garažas</div></button>
     <button class="navBtn" data-view="customers"><div class="ico">👥</div><div>Klientai</div></button>
     <button class="navBtn" data-view="finance"><div class="ico">€</div><div>Finansai</div></button>
@@ -11066,12 +11081,12 @@ async function render(){
     Object.keys(photoUrlCache).forEach(k=>delete photoUrlCache[k]);
   }
   document.getElementById('backupCompany').onclick=async()=>{
-    const b=document.getElementById('backupCompany'),status=document.getElementById('backupStatus');b.disabled=true;status.textContent='Ruošiama kopija su nuotraukomis…';
-    try{const snapshot=JSON.parse(JSON.stringify(state)),photos=await companyPhotoExport(snapshot);const blob=new Blob([JSON.stringify({app:'visureigiai-uab',version:1,createdAt:new Date().toISOString(),state:snapshot,photos})],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='Visureigiai-kopija-'+todayISO()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);status.textContent='Kopija paruošta. Patikrinkite atsisiuntimų aplanką.';}catch(e){status.textContent='Nepavyko paruošti visos kopijos: '+e.message;}finally{b.disabled=false;}
+    const b=document.getElementById('backupCompany'),status=document.getElementById('backupStatus');b.disabled=true;status.textContent='Ruošiama kopija su priedais…';
+    try{const snapshot=JSON.parse(JSON.stringify(state)),photos=await companyPhotoExport(snapshot),documents=await exportVehicleDocuments(snapshot);const blob=new Blob([JSON.stringify({app:'visureigiai-uab',version:2,createdAt:new Date().toISOString(),state:snapshot,photos,documents})],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='Visureigiai-kopija-'+todayISO()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);status.textContent='Kopija paruošta. Patikrinkite atsisiuntimų aplanką.';}catch(e){status.textContent='Nepavyko paruošti visos kopijos: '+e.message;}finally{b.disabled=false;}
   };
   document.getElementById('restoreCompany').onclick=()=>document.getElementById('restoreFile').click();
   function validateBackup(data){
-    if(data.app!=='visureigiai-uab'||data.version!==1||!data.state||!Array.isArray(data.photos))throw Error('Pasirinkite šios programėlės atsarginę kopiją.');
+    if(data.app!=='visureigiai-uab'||![1,2].includes(data.version)||!data.state||!Array.isArray(data.photos))throw Error('Pasirinkite šios programėlės atsarginę kopiją.');
     const st=data.state;
     for(const k of ['cars','customers','leadVariants','garageTasks','history','historyLog'])if(!Array.isArray(st[k]))throw Error('Kopijoje trūksta duomenų: '+k);
     if(!st.finances||!['transactions','debts','debtLedger'].every(k=>Array.isArray(st.finances[k])))throw Error('Netinkami finansų duomenys.');
@@ -11083,6 +11098,7 @@ async function render(){
     for(const c of st.customers)if(typeof c.name!=='string'||typeof c.phone!=='string'||!customerStages.includes(c.stage)||!finiteMoney(c.budget||0))throw Error('Netinkami kliento duomenys.');
     for(const l of st.leadVariants)if(!Array.isArray(l.photos)||!l.photos.every(safeRef))throw Error('Netinkamos varianto nuotraukos.');
     for(const p of data.photos)if(typeof p.key!=='string'||!/^[\w-]+$/.test(p.key)||typeof p.value!=='string'||!/^data:image\/(png|jpeg|webp|gif);base64,[\w+/=\s]+$/.test(p.value))throw Error('Netinkama nuotraukų kopija.');
+    validateVehicleDocuments(data);
     return data;
   }
   document.getElementById('restoreFile').onchange=async e=>{
@@ -11092,9 +11108,167 @@ async function render(){
       for(const c of [...data.state.cars,...data.state.leadVariants]){c.photos=(c.photos||[]).map(k=>remap.get(k)||k);if(c.imageSrc)c.imageSrc=remap.get(c.imageSrc)||c.imageSrc;}
       const decoded=await Promise.all(data.photos.map(async p=>({key:remap.get(p.key),value:await(await fetch(p.value)).blob()})));
       await new Promise((resolve,reject)=>{const tx=db.transaction(PHOTO_STORE_NAME,'readwrite'),store=tx.objectStore(PHOTO_STORE_NAME);decoded.forEach(p=>store.put(p.value,p.key));tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);});
+      const documentMap=new Map();
+      for(const item of data.documents||[]){const blob=await readDocumentFile(await(await fetch(item.value)).blob());const key=await putDocument(blob);documentMap.set(item.key,key);}
+      for(const car of data.state.cars)for(const d of car.documents||[])d.key=documentMap.get(d.key);
       const prev=state;state={...defaultState(),...data.state,selectedView:'settings'};if(!saveState()){state=prev;throw Error('Nepakanka saugyklos įrašams atkurti.');}
       location.reload();
     }catch(err){status.textContent='Kopija neatkurta. '+err.message;}finally{e.target.value='';}
+  };
+
+  const SDK_STATES=[['unset','Nesutvarkyta'],['submitted','Pateikta'],['seller','Laukiama pardavėjo'],['buyer','Laukiama pirkėjo'],['seller-late','Vėluoja pardavėjas'],['buyer-late','Vėluoja pirkėjas'],['done','Sutvarkyta']];
+  const DOC_TYPES=[['purchase','Pirkimo sutartis'],['sale','Pardavimo sutartis'],['invoice','Sąskaitos'],['repair','Remonto dokumentai']];
+  const DOCUMENT_LIMIT=20*1024*1024;
+  const fieldValue=(p,k)=>document.getElementById(p+k)?.value.trim()||'';
+  function sdkClass(s){return s==='done'?'sdkDone':s?.endsWith('-late')?'sdkLate':s==='unset'||!s?'sdkUnset':'sdkPending';}
+  function sdkFields(p,c={}){return `<div class="vehicleFields sdkFields"><div class="field"><label for="${p}sdk">SDK</label><input class="input" id="${p}sdk" value="${escapeHTML(c.sdk||'')}" maxlength="32" autocomplete="off" autocapitalize="characters"></div><div class="field"><label for="${p}sdkStatus">SDK būsena</label><select class="input ${sdkClass(c.sdkStatus)}" id="${p}sdkStatus">${SDK_STATES.map(([v,t])=>`<option value="${v}"${v===(c.sdkStatus||'unset')?' selected':''}>${t}</option>`).join('')}</select></div></div>`;}
+  function vehicleFields(p,c={}){
+    return `${sdkFields(p,c)}<details class="vehicleDetails"><summary>Daugiau informacijos</summary><div class="vehicleFields">
+      ${[['vin','VIN','text',17],['year','Metai','number',4],['mileage','Rida, km','number',10],['plate','Valstybinis numeris','text',20],['askingPrice','Planuojama pardavimo kaina, €','number',14],['source','Pasiūlymo kanalas','text',160]].map(([k,l,t,max])=>`<div class="field ${k==='vin'||k==='source'?'vehicleWide':''}"><label for="${p+k}">${l}</label><input class="input" id="${p+k}" type="${t}" ${t==='number'?`min="${k==='year'?1886:0}" step="${k==='askingPrice'?'0.01':1}"`:`maxlength="${max}"`} value="${escapeHTML(c[k]??'')}" ${k==='source'?'placeholder="Facebook, telefonas, rekomendacija…"':''} ${k==='vin'||k==='plate'?'autocapitalize="characters" autocomplete="off"':''}></div>`).join('')}
+      </div></details>`;
+  }
+  function readVehicleFields(p){
+    const o={};for(const k of ['sdk','vin','plate'])o[k]=fieldValue(p,k).toUpperCase();o.source=fieldValue(p,'source');o.sdkStatus=fieldValue(p,'sdkStatus')||'unset';
+    for(const k of ['year','mileage','askingPrice']){const v=fieldValue(p,k);o[k]=v===''?null:Number(v);if(v!==''&&(!Number.isFinite(o[k])||o[k]<0||(k!=='askingPrice'&&!Number.isInteger(o[k]))))throw Error('Patikrinkite lauką „'+({year:'Metai',mileage:'Rida',askingPrice:'Planuojama pardavimo kaina'}[k])+'“.');}
+    if(o.year!==null&&(o.year<1886||o.year>new Date().getFullYear()+1))throw Error('Patikrinkite automobilio metus.');
+    if(o.vin&&!/^[A-HJ-NPR-Z0-9]{17}$/.test(o.vin))throw Error('VIN turi sudaryti 17 raidžių ir skaitmenų (be I, O, Q).');
+    return o;
+  }
+  function documentRows(p,c){return (c.documents||[]).map(d=>`<div class="vehicleDocRow" data-doc-row="${escapeHTML(d.id)}"><button type="button" class="vehicleDocDownload" data-doc-download="${escapeHTML(d.id)}"><strong>${escapeHTML(d.name)}</strong><span>${escapeHTML(DOC_TYPES.find(x=>x[0]===d.kind)?.[1]||'Dokumentas')} · ${Math.max(1,Math.round(d.size/1024))} KB</span></button><button type="button" class="vehicleDocRemove" data-doc-remove="${escapeHTML(d.id)}" aria-label="Pašalinti ${escapeHTML(d.name)}">×</button></div>`).join('');}
+  function documentFields(p,c={}){return `<details class="vehicleDetails vehicleDocuments"><summary>Dokumentai <span class="vehicleCount">${(c.documents||[]).length||''}</span></summary><div class="vehicleDocList" id="${p}docList">${documentRows(p,c)}</div><div class="vehicleDocInputs">${DOC_TYPES.map(([k,t])=>`<label class="vehicleDocPicker" for="${p}doc_${k}"><span>＋ ${t}</span><input id="${p}doc_${k}" type="file" accept="application/pdf,image/jpeg,image/png,image/webp" multiple><small id="${p}files_${k}" aria-live="polite"></small></label>`).join('')}</div></details>`;}
+  async function documentBlob(key){const db=await openPhotoDB();return new Promise((resolve,reject)=>{const r=db.transaction(PHOTO_STORE_NAME,'readonly').objectStore(PHOTO_STORE_NAME).get(key);r.onsuccess=()=>r.result instanceof Blob?resolve(r.result):reject(Error('Dokumento nepavyko rasti.'));r.onerror=()=>reject(r.error);});}
+  async function putDocument(blob,key='doc_'+uid()){const db=await openPhotoDB();await new Promise((resolve,reject)=>{const tx=db.transaction(PHOTO_STORE_NAME,'readwrite');tx.objectStore(PHOTO_STORE_NAME).put(blob,key);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||Error('Dokumento nepavyko išsaugoti.'));});return key;}
+  async function downloadDocument(c,id){try{const d=(c.documents||[]).find(x=>x.id===id);if(!d)return;const blob=await documentBlob(d.key),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=d.name;a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);}catch(e){toast(e.message,'!');}}
+  async function readDocumentFile(f){
+    if(!f.size||f.size>DOCUMENT_LIMIT)throw Error('Dokumentas turi būti ne didesnis nei 20 MB.');
+    const a=new Uint8Array(await f.slice(0,12).arrayBuffer());let type='';
+    if(String.fromCharCode(...a.slice(0,5))==='%PDF-')type='application/pdf';
+    else if(a[0]===255&&a[1]===216&&a[2]===255)type='image/jpeg';
+    else if(a[0]===137&&String.fromCharCode(...a.slice(1,4))==='PNG')type='image/png';
+    else if(String.fromCharCode(...a.slice(0,4))==='RIFF'&&String.fromCharCode(...a.slice(8,12))==='WEBP')type='image/webp';
+    if(!type)throw Error('Pasirinkite PDF, JPG, PNG arba WebP dokumentą.');
+    return new Blob([f],{type});
+  }
+  async function collectDocuments(p,c={}){
+    const existing=(c.documents||[]).filter(d=>!document.querySelector(`[data-doc-row="${d.id}"]`)?.dataset.removed);
+    const files=DOC_TYPES.flatMap(([kind])=>Array.from(document.getElementById(p+'doc_'+kind)?.files||[]).map(file=>({kind,file})));
+    const prepared=await Promise.all(files.map(async x=>({...x,blob:await readDocumentFile(x.file)})));
+    const added=[];try{for(const x of prepared){const key=await putDocument(x.blob);added.push({id:uid(),key,kind:x.kind,name:x.file.name,type:x.blob.type,size:x.blob.size,addedAt:nowLabel()});}}catch(e){await Promise.all(added.map(d=>photoDelete(d.key)));throw e;}
+    return [...existing,...added];
+  }
+  function bindVehicleFields(p,c,instant=false){
+    DOC_TYPES.forEach(([kind])=>document.getElementById(p+'doc_'+kind)?.addEventListener('change',e=>{const label=document.getElementById(p+'files_'+kind);if(label)label.textContent=Array.from(e.target.files||[]).map(f=>f.name).join(', ');}));
+    const sel=document.getElementById(p+'sdkStatus');if(sel)sel.onchange=()=>{sel.className='input '+sdkClass(sel.value);};
+    const root=document.getElementById(p+'docList');if(root){root.querySelectorAll('[data-doc-download]').forEach(b=>b.onclick=()=>downloadDocument(c,b.dataset.docDownload));root.querySelectorAll('[data-doc-remove]').forEach(b=>b.onclick=async()=>{
+      if(!confirm('Pašalinti šį dokumentą?'))return;const row=b.closest('[data-doc-row]');
+      if(!instant){row.dataset.removed='1';row.hidden=true;return;}
+      const previous=c.documents;c.documents=previous.filter(d=>d.id!==b.dataset.docRemove);if(!saveState()){c.documents=previous;toast('Nepavyko išsaugoti pakeitimo.');return;}
+      renderCarSheet(c);document.querySelector('#sheet .vehicleDocuments').open=true;
+    });}
+    if(instant)DOC_TYPES.forEach(([kind])=>{const input=document.getElementById(p+'doc_'+kind);input.onchange=async()=>{
+      if(!input.files.length)return;const inputs=[...document.querySelectorAll('#sheet .vehicleDocInputs input')];inputs.forEach(x=>x.disabled=true);
+      try{const docs=await collectDocuments(p,c),old=c.documents;c.documents=docs;if(!saveState()){c.documents=old;throw Error('Nepavyko išsaugoti dokumentų.');}renderCarSheet(c);document.querySelector('#sheet .vehicleDocuments').open=true;toast('Dokumentai pridėti','✓');}
+      catch(e){toast(e.message,'!');}finally{inputs.forEach(x=>x.disabled=false);}
+    };});
+  }
+  const baseCarSheet=renderCarSheet;
+  renderCarSheet=function(c){
+    baseCarSheet(c);const body=document.querySelector('#sheet .premiumDetailBody');
+    const info=[['VIN',c.vin],['Metai',c.year],['Rida',c.mileage!=null?new Intl.NumberFormat('lt-LT').format(c.mileage)+' km':''],['Valstybinis numeris',c.plate],['Planuojama pardavimo kaina',c.askingPrice!=null?new Intl.NumberFormat('lt-LT',{style:'currency',currency:'EUR'}).format(c.askingPrice):''],['Pasiūlymo kanalas',c.source]];
+    body.insertAdjacentHTML('afterbegin',`<div class="vehicleSdkDisplay"><div><span>SDK</span><strong>${escapeHTML(c.sdk||'—')}</strong></div><span class="vehicleSdkBadge ${sdkClass(c.sdkStatus)}">${SDK_STATES.find(x=>x[0]===(c.sdkStatus||'unset'))?.[1]||'Nesutvarkyta'}</span></div><details class="vehicleDetails"><summary>Daugiau informacijos</summary><dl class="vehicleInfo">${info.map(([l,v])=>`<div><dt>${l}</dt><dd>${escapeHTML(v??'')||'—'}</dd></div>`).join('')}</dl></details>`);
+    document.querySelector('#sheet .carMediaSection').insertAdjacentHTML('afterend',documentFields('viewVehicle',c));bindVehicleFields('viewVehicle',c,true);
+  };
+  const baseCarEdit=openCarEditSheet;
+  openCarEditSheet=function(id){
+    baseCarEdit(id);const c=state.cars.find(x=>x.id===id);if(!c)return;
+    document.querySelector('#sheet .carEditSection').insertAdjacentHTML('beforeend',vehicleFields('editVehicle',c)+documentFields('editVehicle',c));bindVehicleFields('editVehicle',c);
+    document.querySelectorAll('#sheet .carSheetEyebrow,#sheet .carSectionEyebrow').forEach(e=>e.remove());document.getElementById('sheet').scrollTop=0;
+    document.getElementById('saveCarEdit').onclick=async()=>{
+      const button=document.getElementById('saveCarEdit');if(button.disabled)return;
+      try{
+        const extra=readVehicleFields('editVehicle'),name=fieldValue('editCar','Name'),buy=Number(fieldValue('editCar','BuyPrice')),soldEl=document.getElementById('editCarSoldPrice'),sold=soldEl?Number(soldEl.value):null;
+        if(!name||!Number.isFinite(buy)||buy<=0||(soldEl&&(!Number.isFinite(sold)||sold<=0)))throw Error('Įveskite pavadinimą ir teigiamą kainą.');
+        button.disabled=true;const docs=await collectDocuments('editVehicle',c),photos=[...(c.photos||[])];
+        for(const f of Array.from(document.getElementById('editCarPhotos').files||[])){const key=await storeImageFile(f);if(!key)throw Error('Nepavyko pridėti nuotraukos.');photos.push(key);await photoGet(key);}
+        const old=JSON.parse(JSON.stringify(c)),oldBalance=state.finances.budgetBalance;
+        Object.assign(c,extra,{name,buyPrice:buy,notes:fieldValue('editCar','Notes'),documents:docs,photos,imageSrc:photos[0]||''});
+        state.finances.budgetBalance+=Number(old.buyPrice||0)-buy;
+        if(soldEl){c.soldPrice=sold;c.netProfit=carNetProfit(c);state.finances.budgetBalance+=sold-Number(old.soldPrice||0);}
+        if(!saveState()){Object.keys(c).forEach(k=>delete c[k]);Object.assign(c,old);state.finances.budgetBalance=oldBalance;throw Error('Nepavyko išsaugoti automobilio.');}
+        addHistory('Automobilis atnaujintas',c.name,'🚗');saveState();render();openCar(c.id);toast('Automobilis atnaujintas','✓');
+      }catch(e){toast(e.message,'!');}finally{button.disabled=false;}
+    };
+  };
+  document.getElementById('addCarBtn').insertAdjacentHTML('beforebegin',vehicleFields('newVehicle')+documentFields('newVehicle'));
+  bindVehicleFields('newVehicle',{});
+  document.getElementById('addCarBtn').onclick=async()=>{
+    const b=document.getElementById('addCarBtn');if(b.disabled)return;
+    try{
+      const extra=readVehicleFields('newVehicle'),name=fieldValue('car','Name'),buy=Number(fieldValue('car','BuyPrice'));if(!name||!Number.isFinite(buy)||buy<=0)throw Error('Įveskite pavadinimą ir teigiamą pirkimo kainą.');
+      b.disabled=true;const docs=await collectDocuments('newVehicle'),photos=[];
+      for(const f of Array.from(document.getElementById('carPhoto').files||[])){const key=await storeImageFile(f);if(!key)throw Error('Nepavyko pridėti nuotraukos.');photos.push(key);await photoGet(key);}
+      const c={id:uid(),name,...extra,documents:docs,photos,imageSrc:photos[0]||'',notes:'',buyPrice:buy,soldPrice:null,netProfit:0,soldAt:null,soldDateISO:null,createdDateISO:todayISO(),createdAt:nowLabel(),status:'aktyvus',checklist:[]};
+      state.cars.unshift(c);ensureFinanceCollections();state.finances.budgetBalance-=buy;
+      if(!saveState()){state.cars=state.cars.filter(x=>x!==c);state.finances.budgetBalance+=buy;throw Error('Nepavyko išsaugoti automobilio.');}
+      addHistory('Automobilis nupirktas',name+' • '+moneyFmt(buy),'🚗',{kind:'car',id:c.id,label:'Atidaryti automobilį'});saveState();
+      document.querySelectorAll('#addCarPanel input').forEach(i=>i.value='');document.querySelectorAll('#addCarPanel .vehicleDocPicker small').forEach(e=>e.textContent='');document.getElementById('newVehiclesdkStatus').value='unset';document.getElementById('newVehiclesdkStatus').className='input sdkUnset';document.querySelectorAll('#addCarPanel details').forEach(d=>d.open=false);
+      document.getElementById('addCarPanel').style.display='none';document.getElementById('showAddCarFormBtn').style.display='block';render();toast('Automobilis pridėtas','✓');
+    }catch(e){toast(e.message,'!');}finally{b.disabled=false;}
+  };
+  async function exportVehicleDocuments(snapshot){return Promise.all(snapshot.cars.flatMap(c=>c.documents||[]).map(async d=>({key:d.key,value:await blobToDataUrl(await documentBlob(d.key))})));
+  }
+  function validateVehicleDocuments(data){
+    data.documents=data.documents||[];if(!Array.isArray(data.documents))throw Error('Netinkama dokumentų kopija.');
+    const keys=new Set();for(const d of data.documents){if(!d||typeof d.key!=='string'||!/^doc_[\w-]+$/.test(d.key)||keys.has(d.key)||typeof d.value!=='string'||!/^data:(application\/pdf|image\/(png|jpeg|webp));base64,[A-Za-z0-9+/=\s]+$/.test(d.value)||d.value.length>DOCUMENT_LIMIT*1.4)throw Error('Netinkamas dokumentas kopijoje.');keys.add(d.key);}
+    for(const c of data.state.cars){if(c.documents!==undefined&&!Array.isArray(c.documents))throw Error('Netinkamas dokumentų sąrašas.');for(const d of c.documents||[]){if(!d||typeof d.id!=='string'||!/^[-\w]+$/.test(d.id)||!keys.has(d.key)||typeof d.name!=='string'||!DOC_TYPES.some(x=>x[0]===d.kind)||!Number.isFinite(d.size)||d.size<0)throw Error('Kopijoje trūksta dokumento.');}}
+  }
+
+  let workFilter='all';
+  function renderCompanyHome(){
+    const tasks=companyTasks();
+    state.cars.filter(c=>c.status!=='parduotas'&&c.sdkStatus&&c.sdkStatus!=='done').forEach(c=>tasks.push({title:c.name,detail:'SDK · '+(SDK_STATES.find(s=>s[0]===c.sdkStatus)?.[1]||'Nesutvarkyta'),date:'',kind:'car',id:c.id,icon:'▤',late:c.sdkStatus.endsWith('-late')}));
+    const now=todayISO();tasks.sort((a,b)=>Number(!!(b.late||(b.date&&b.date<now)))-Number(!!(a.late||(a.date&&a.date<now)))||(a.date||'9999').localeCompare(b.date||'9999'));
+    const shown=tasks.filter(t=>workFilter==='all'||(workFilter==='today'?t.date===now:t.late||(t.date&&t.date<now)));
+    document.getElementById('companyHome').innerHTML=`<div class="workHead"><h2>Darbai</h2><button class="workTextButton" data-open-view="garage-stats">Statistika ↗</button></div>
+      <div class="workActions"><button data-company-addcar><span>＋</span>Automobilis</button><button data-company-newcustomer><span>＋</span>Kliento užklausa</button><button data-work-lead><span>＋</span>Pirkimo variantas</button><button data-work-task><span>＋</span>Užduotis</button></div>
+      <div class="workTabs" role="group" aria-label="Darbų filtras">${[['all','Visi'],['today','Šiandien'],['late','Vėluoja']].map(([v,l])=>`<button type="button" data-work-filter="${v}" aria-pressed="${workFilter===v}" class="${workFilter===v?'selected':''}">${l}</button>`).join('')}</div>
+      <div class="companyList">${shown.map(t=>`<button class="companyRow" data-company-kind="${t.kind}" data-company-id="${escapeHTML(t.id)}"><span class="rowIcon">${t.icon}</span><span class="rowBody"><strong>${escapeHTML(t.title)}</strong><small>${escapeHTML(t.detail)}</small></span>${t.date||t.late?`<span class="rowEnd ${t.late||(t.date<now)?'companyDue':''}">${t.late?'Vėluoja':t.date===now?'Šiandien':companyDate(t.date)}</span>`:''}</button>`).join('')||`<div class="workEmpty">${workFilter==='today'?'Šiandienai suplanuotų darbų nėra.':workFilter==='late'?'Vėluojančių darbų nėra.':'Laukiančių darbų nėra.'}</div>`}</div>`;
+    document.querySelectorAll('.navBtn').forEach(b=>{if(b.dataset.view===state.selectedView)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+  }
+  document.addEventListener('click',e=>{
+    const filter=e.target.closest('[data-work-filter]');if(filter){workFilter=filter.dataset.workFilter;renderCompanyHome();return;}
+    if(e.target.closest('[data-work-lead]')){companyGo('garage-leads');document.getElementById('showAddGarageLeadBtn').click();return;}
+    if(e.target.closest('[data-work-task]')){state.ui.garageTaskGroups={autos:false,custom:true};companyGo('garage');setTimeout(()=>document.getElementById('garageTaskTitle').focus(),100);}
+  });
+  const statsPage=document.getElementById('view-garage-stats');
+  statsPage.innerHTML=`<div class="workHead"><h2>Statistika</h2><button class="workTextButton" data-open-view="garage">Garažas ↗</button></div><form id="periodForm" class="periodPanel"><div class="workTabs periodTabs" role="group" aria-label="Laikotarpis">${[['month','Šis mėnuo'],['previous','Praėjęs'],['year','Šie metai'],['all','Visas laikas']].map(([v,l])=>`<button type="button" data-period="${v}">${l}</button>`).join('')}</div><div class="periodDates"><label for="periodFrom">Nuo<input class="input" type="date" id="periodFrom"></label><label for="periodTo">Iki<input class="input" type="date" id="periodTo"></label><button class="btn" type="submit">Rodyti</button></div><div id="periodError" role="alert"></div></form><div id="periodSummary"></div><div class="workHead salesHeading"><h3>Pardavimai</h3><span id="periodSalesCount"></span></div><div id="periodSales"></div>`;
+  state.reportingRange=state.reportingRange||{from:currentMonthKey()+'-01',to:todayISO(),preset:'month'};
+  document.getElementById('periodFrom').value=state.reportingRange.from||'';document.getElementById('periodTo').value=state.reportingRange.to||'';
+  function applyPeriod(from,to,preset='custom'){
+    const error=document.getElementById('periodError');if(from&&to&&from>to){error.textContent='Pradžios data turi būti ne vėlesnė už pabaigos datą.';return false;}error.textContent='';
+    state.reportingRange={from,to,preset};state.ui.garageSalesPage=1;document.getElementById('periodFrom').value=from;document.getElementById('periodTo').value=to;saveState();renderGarageStatsPage();return true;
+  }
+  document.getElementById('periodForm').onsubmit=e=>{e.preventDefault();applyPeriod(document.getElementById('periodFrom').value,document.getElementById('periodTo').value);};
+  statsPage.querySelectorAll('[data-period]').forEach(b=>b.onclick=()=>{
+    const today=todayISO(),date=parseISODateLocal(today),key=b.dataset.period;let from='',to=today;
+    if(key==='month')from=today.slice(0,7)+'-01';
+    if(key==='year')from=today.slice(0,4)+'-01-01';
+    if(key==='previous'){from=toISODateLocal(new Date(date.getFullYear(),date.getMonth()-1,1));to=toISODateLocal(new Date(date.getFullYear(),date.getMonth(),0));}
+    if(key==='all')to='';applyPeriod(from,to,key);
+  });
+  renderGarageStatsPage=function(){
+    const r=state.reportingRange;const within=d=>!r.from&&!r.to?true:!!d&&(!r.from||d.slice(0,10)>=r.from)&&(!r.to||d.slice(0,10)<=r.to);
+    const bought=state.cars.filter(c=>within(c.createdDateISO)),sold=state.cars.filter(c=>c.status==='parduotas'&&within(c.soldDateISO)).sort((a,b)=>(b.soldDateISO||'').localeCompare(a.soldDateISO||''));
+    const purchase=bought.reduce((n,c)=>n+Number(c.buyPrice||0),0),revenue=sold.reduce((n,c)=>n+Number(c.soldPrice||0),0),cost=sold.reduce((n,c)=>n+carTotalCost(c),0),margin=revenue-cost;
+    const days=sold.map(c=>{const a=parseISODateLocal(c.createdDateISO),b=parseISODateLocal(c.soldDateISO);return a&&b&&b>=a?Math.round((b-a)/86400000):null;}).filter(d=>d!==null);
+    document.getElementById('periodSummary').innerHTML=`<div class="periodMetrics">${[['Nupirkta',bought.length],['Parduota',sold.length],['Pirkimo suma',moneyFmt(purchase)],['Pardavimo pajamos',moneyFmt(revenue)],['Parduotų auto savikaina',moneyFmt(cost)],['Pardavimo marža',moneyFmt(margin)]].map(([l,v],i)=>`<div class="periodMetric ${i===5?'periodProfit':''}"><span>${l}</span><strong${i===5&&margin<0?' class="companyDue"':''}>${v}</strong></div>`).join('')}</div><div class="periodAverages"><div><span>Vid. marža / auto</span><strong>${sold.length?moneyFmt(margin/sold.length):'—'}</strong></div><div><span>Vid. pardavimo laikas</span><strong>${days.length?Math.round(days.reduce((a,b)=>a+b,0)/days.length)+' d.':'—'}</strong></div></div><p class="periodFootnote">Pirkimai pagal pirkimo datą, pardavimai pagal pardavimo datą. Marža prieš bendrąsias išlaidas ir mokesčius.</p>`;
+    statsPage.querySelectorAll('[data-period]').forEach(b=>{b.classList.toggle('selected',b.dataset.period===r.preset);b.setAttribute('aria-pressed',String(b.dataset.period===r.preset));});
+    const max=Math.max(1,Math.ceil(sold.length/10));state.ui.garageSalesPage=Math.min(Math.max(1,state.ui.garageSalesPage||1),max);const page=state.ui.garageSalesPage;
+    document.getElementById('periodSalesCount').textContent=sold.length;
+    document.getElementById('periodSales').innerHTML=sold.length?`<div class="companyList">${sold.slice((page-1)*10,page*10).map(c=>`<button class="companyRow" data-period-car="${escapeHTML(c.id)}"><span class="rowBody"><strong>${escapeHTML(c.name)}</strong><small>${escapeHTML(c.soldDateISO||'Data nenurodyta')} · ${moneyFmt(c.soldPrice)}</small></span><span class="periodSaleMargin ${carNetProfit(c)<0?'companyDue':''}">${moneyFmt(carNetProfit(c))}<small>Marža</small></span></button>`).join('')}</div>${max>1?`<div class="periodPager"><button class="btn secondary" id="periodPrev" ${page===1?'disabled':''}>←</button><span>${page} / ${max}</span><button class="btn secondary" id="periodNext" ${page===max?'disabled':''}>→</button></div>`:''}`:'<div class="workEmpty">Šiuo laikotarpiu pardavimų nėra.</div>';
+    statsPage.querySelectorAll('[data-period-car]').forEach(b=>b.onclick=()=>openCar(b.dataset.periodCar));
+    if(document.getElementById('periodPrev'))document.getElementById('periodPrev').onclick=()=>{state.ui.garageSalesPage--;renderGarageStatsPage();};
+    if(document.getElementById('periodNext'))document.getElementById('periodNext').onclick=()=>{state.ui.garageSalesPage++;renderGarageStatsPage();};
   };
 
   migrateGarageChecklists();
@@ -11130,4 +11304,3 @@ async function render(){
 </script>
 </body>
 </html>
-
